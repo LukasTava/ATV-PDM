@@ -27,11 +27,9 @@ const App = () => {
         );
       };
 
-      const removerTecnologia = (tecnologia) => {
-        setTecnologias((prevTecnologias) =>
-          prevTecnologias.filter((t) => t !== tecnologia)
-        );
-      };
+  const removerTecnologia = (tecnologia) => {
+    setTecnologias(tecnologias.filter((t) => t !== tecnologia));
+  };
 
   return (
     <SafeAreaView style={styles.container}>
